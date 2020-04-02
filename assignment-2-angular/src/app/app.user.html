@@ -1,0 +1,19 @@
+<h1>User component:</h1>
+<ul>
+    <li *ngFor="let user of users">
+        {{user.name | json}}
+    </li>
+</ul>
+<h1>
+    Address Component
+</h1>
+<ul class="addressDiv" *ngFor="let user of users">
+    <app-address [address]="user.address"></app-address>
+</ul>
+
+<h1>
+    Company Component
+</h1>
+<ul class="companyDiv" *ngFor="let user of users">
+    <app-company [company]="user.company"></app-company>
+</ul>
