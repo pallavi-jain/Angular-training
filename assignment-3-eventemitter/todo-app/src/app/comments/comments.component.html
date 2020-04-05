@@ -1,0 +1,16 @@
+
+<div class="row row-cols-1 row-cols-md-5 card-deck">
+    <div class="col mb-3" *ngFor="let comment of comments">
+    <div class="card" style="width:250px;" >
+        <div class="class-body ml-3">
+            <h4 class="mt-2">Name and Email:</h4>
+            <div class="card-title">{{comment.name}}, {{comment.email}}</div>
+            <h4>Comment:</h4>
+            <div class="card-body">
+                {{comment.body}}
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
