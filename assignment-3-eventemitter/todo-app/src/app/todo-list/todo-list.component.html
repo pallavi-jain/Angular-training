@@ -1,0 +1,16 @@
+
+<style>
+.todoList{
+    list-style: none;
+    padding-left: 0px;
+}
+</style>
+<ul class="todoList">
+        <li *ngFor="let todo of todos">
+           
+          <todo
+            [item]="todo"
+            (onChange)="onComplete.emit($event)">
+          </todo>
+        </li>
+      </ul>

@@ -1,0 +1,8 @@
+<div>
+        <todo-form
+          (onAdd)="addTodo($event)">
+        </todo-form>
+        <todo-list (onComplete)="completeTodo($event)"
+          [todos]="todos">
+        </todo-list>
+      </div>  
